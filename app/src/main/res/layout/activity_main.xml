@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:text="Hello, Android!!"
         android:textSize="20sp" />
+
     <Button
         android:id="@+id/actionButton"
         android:layout_width="wrap_content"
@@ -37,6 +38,7 @@
         android:text="Click This"
 
         />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,6 +70,7 @@
             android:textColor="#ff5733"
             android:textSize="20sp" />
     </LinearLayout>
+
     <Button
         android:id="@+id/sumButton"
         android:layout_width="wrap_content"
@@ -107,9 +110,6 @@
     </LinearLayout>
 
 
-
-
-
     <Button
         android:id="@+id/increButton"
         android:layout_width="wrap_content"
@@ -117,15 +117,60 @@
         android:text="Perform Increment" />
 
     <EditText
-        android:id="@+id/inputField"
+        android:id="@+id/inputNameField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your name" />
+
+    <EditText
+        android:id="@+id/inputDOBField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your DOB" />
+
+    <Button
+        android:id="@+id/DOBButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Age" />
+
+    <TextView
+        android:id="@+id/yourAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ff5733"
+        android:textSize="20sp" />
+
     <!--    <ImageView-->
     <!--        android:id="@+id/logoImage"-->
     <!--        android:layout_width="wrap_content"-->
     <!--        android:layout_height="wrap_content"-->
     <!--        android:src="@drawable/ic_launcher" />-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ratingInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Rating" />
+
+        <TextView
+            android:id="@+id/ratingRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+    </LinearLayout>
 
 
+    <Button
+        android:id="@+id/showRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Rating" />
 </LinearLayout>
