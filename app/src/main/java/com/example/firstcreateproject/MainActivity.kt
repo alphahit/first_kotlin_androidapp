@@ -3,6 +3,7 @@ package com.example.firstcreateproject
 
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -115,7 +116,27 @@ class MainActivity : AppCompatActivity() {
                 ratingRes.setTextColor(Color.RED)
             }
         }
+        var age = 10
+        while(age > 0){
+            Log.i("ALPHA", "$age while")
+            age--
+        }
 
+        var money = 10
+        while(money>10){
+            Log.i("ALPHA", "$money while")
+            money--
+        }
+
+        do {
+            Log.i("ALPHA", "$money do while")
+            money--
+        }while (money>10)
+
+        val myList = listOf(1,2,3,4,5,6,7,8,9)
+        for(i in myList){
+            Log.i("ALPHA", "FOR LOOPING ===> $i ")
+        }
 
     }
 
@@ -157,5 +178,9 @@ class MainActivity : AppCompatActivity() {
                 textView.setTextColor(Color.RED)
             }
         }
+
+
     }
+
+
 }
